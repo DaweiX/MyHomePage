@@ -1,0 +1,1 @@
+browserify -t brfs D:\Projects\JavaScript\mypage\logic.js > D:\Projects\JavaScript\mypage\bundle.js

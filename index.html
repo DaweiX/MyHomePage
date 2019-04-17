@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+
+<head>
+    <title>我的主页</title>
+    <!--CSS的优先级：内联>内部后的外部>内部>外部>浏览器默认-->
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <!-- <script data-main="logic" src="lib/require.js"></script> -->
+    <script src="lib/jquery.js"></script>
+    <script src="lib/id3.min.js"></script>
+    <script src="bundle.js"></script>
+</head>
+
+<body>
+    <div class="dropdown center">
+        <button class="dropbtn">百度</button>
+        <div id="drop_eng" style="background-color:#f9f9f9;">
+            <a class="combo_sear">谷歌</a>
+            <a class="combo_sear">必应</a>
+            <a class="combo_sear">雅虎</a>
+            <a class="combo_sear">百度</a>
+        </div>
+
+        <div style="width:344px;">
+            <!--320+24-->
+            <input id="search" type="text">
+            <div id="drop_sug"></div>
+        </div>
+        <button class="btn_search"></button>
+    </div>
+    <div class="wrap">
+        <!--pat：分区，list：列表-->
+        <div class="pat"></div>
+        <div class="pat"></div>
+        <div id="media">
+            <audio id="player" controls="controls" loop="true"></audio>
+            <div id="playlist"></div>
+        </div>
+    </div>
+</body>
