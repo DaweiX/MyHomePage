@@ -13,7 +13,7 @@ var search_site = {
 };
 
 // 搜索建议回调函数
-function handleResult(res) {
+window.handleResult = function(res) {
     $(".temp").remove();
     var result = res.g;
     if (!result) return;
